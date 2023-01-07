@@ -59,10 +59,8 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'int',
-        'category' => '\Colapiombo\Behaviour\OpenAPI\Generated\Model\Category',
         'name' => 'string',
         'photo_urls' => 'string[]',
-        'tags' => '\Colapiombo\Behaviour\OpenAPI\Generated\Model\Tag[]',
         'status' => 'string'
     ];
 
@@ -75,10 +73,8 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'id' => 'int64',
-        'category' => null,
         'name' => null,
         'photo_urls' => null,
-        'tags' => null,
         'status' => null
     ];
 
@@ -89,10 +85,8 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static array $openAPINullables = [
         'id' => false,
-		'category' => false,
 		'name' => false,
 		'photo_urls' => false,
-		'tags' => false,
 		'status' => false
     ];
 
@@ -183,10 +177,8 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'id' => 'id',
-        'category' => 'category',
         'name' => 'name',
         'photo_urls' => 'photoUrls',
-        'tags' => 'tags',
         'status' => 'status'
     ];
 
@@ -197,10 +189,8 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'id' => 'setId',
-        'category' => 'setCategory',
         'name' => 'setName',
         'photo_urls' => 'setPhotoUrls',
-        'tags' => 'setTags',
         'status' => 'setStatus'
     ];
 
@@ -211,10 +201,8 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'id' => 'getId',
-        'category' => 'getCategory',
         'name' => 'getName',
         'photo_urls' => 'getPhotoUrls',
-        'tags' => 'getTags',
         'status' => 'getStatus'
     ];
 
@@ -293,10 +281,8 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->setIfExists('id', $data ?? [], null);
-        $this->setIfExists('category', $data ?? [], null);
         $this->setIfExists('name', $data ?? [], null);
         $this->setIfExists('photo_urls', $data ?? [], null);
-        $this->setIfExists('tags', $data ?? [], null);
         $this->setIfExists('status', $data ?? [], null);
     }
 
@@ -385,33 +371,6 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets category
-     *
-     * @return \Colapiombo\Behaviour\OpenAPI\Generated\Model\Category|null
-     */
-    public function getCategory()
-    {
-        return $this->container['category'];
-    }
-
-    /**
-     * Sets category
-     *
-     * @param \Colapiombo\Behaviour\OpenAPI\Generated\Model\Category|null $category category
-     *
-     * @return self
-     */
-    public function setCategory($category)
-    {
-        if (is_null($category)) {
-            throw new \InvalidArgumentException('non-nullable category cannot be null');
-        }
-        $this->container['category'] = $category;
-
-        return $this;
-    }
-
-    /**
      * Gets name
      *
      * @return string
@@ -461,33 +420,6 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
             throw new \InvalidArgumentException('non-nullable photo_urls cannot be null');
         }
         $this->container['photo_urls'] = $photo_urls;
-
-        return $this;
-    }
-
-    /**
-     * Gets tags
-     *
-     * @return \Colapiombo\Behaviour\OpenAPI\Generated\Model\Tag[]|null
-     */
-    public function getTags()
-    {
-        return $this->container['tags'];
-    }
-
-    /**
-     * Sets tags
-     *
-     * @param \Colapiombo\Behaviour\OpenAPI\Generated\Model\Tag[]|null $tags tags
-     *
-     * @return self
-     */
-    public function setTags($tags)
-    {
-        if (is_null($tags)) {
-            throw new \InvalidArgumentException('non-nullable tags cannot be null');
-        }
-        $this->container['tags'] = $tags;
 
         return $this;
     }
