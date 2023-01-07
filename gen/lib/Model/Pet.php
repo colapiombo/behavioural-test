@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Colapiombo\Behaviour\OpenAPI\Client
+ * @package  Colapiombo\Behaviour\OpenAPI\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Colapiombo\Behaviour\OpenAPI\Client\Model;
+namespace Colapiombo\Behaviour\OpenAPI\Generated\Model;
 
 use \ArrayAccess;
-use \Colapiombo\Behaviour\OpenAPI\Client\ObjectSerializer;
+use \Colapiombo\Behaviour\OpenAPI\Generated\ObjectSerializer;
 
 /**
  * Pet Class Doc Comment
  *
  * @category Class
  * @description A pet for sale in the pet store
- * @package  Colapiombo\Behaviour\OpenAPI\Client
+ * @package  Colapiombo\Behaviour\OpenAPI\Generated
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'int',
-        'category' => '\Colapiombo\Behaviour\OpenAPI\Client\Model\Category',
+        'category' => '\Colapiombo\Behaviour\OpenAPI\Generated\Model\Category',
         'name' => 'string',
         'photo_urls' => 'string[]',
-        'tags' => '\Colapiombo\Behaviour\OpenAPI\Client\Model\Tag[]',
+        'tags' => '\Colapiombo\Behaviour\OpenAPI\Generated\Model\Tag[]',
         'status' => 'string'
     ];
 
@@ -387,7 +387,7 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \Colapiombo\Behaviour\OpenAPI\Client\Model\Category|null
+     * @return \Colapiombo\Behaviour\OpenAPI\Generated\Model\Category|null
      */
     public function getCategory()
     {
@@ -397,7 +397,7 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \Colapiombo\Behaviour\OpenAPI\Client\Model\Category|null $category category
+     * @param \Colapiombo\Behaviour\OpenAPI\Generated\Model\Category|null $category category
      *
      * @return self
      */
@@ -468,7 +468,7 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tags
      *
-     * @return \Colapiombo\Behaviour\OpenAPI\Client\Model\Tag[]|null
+     * @return \Colapiombo\Behaviour\OpenAPI\Generated\Model\Tag[]|null
      */
     public function getTags()
     {
@@ -478,7 +478,7 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tags
      *
-     * @param \Colapiombo\Behaviour\OpenAPI\Client\Model\Tag[]|null $tags tags
+     * @param \Colapiombo\Behaviour\OpenAPI\Generated\Model\Tag[]|null $tags tags
      *
      * @return self
      */

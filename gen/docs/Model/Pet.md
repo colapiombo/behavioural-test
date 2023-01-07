@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional]
-**category** | [**\Colapiombo\Behaviour\OpenAPI\Client\Model\Category**](Category.md) |  | [optional]
+**category** | [**\Colapiombo\Behaviour\OpenAPI\Generated\Model\Category**](Category.md) |  | [optional]
 **name** | **string** |  |
 **photo_urls** | **string[]** |  |
-**tags** | [**\Colapiombo\Behaviour\OpenAPI\Client\Model\Tag[]**](Tag.md) |  | [optional]
+**tags** | [**\Colapiombo\Behaviour\OpenAPI\Generated\Model\Tag[]**](Tag.md) |  | [optional]
 **status** | **string** | pet status in the store | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

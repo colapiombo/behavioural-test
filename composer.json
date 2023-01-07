@@ -15,6 +15,6 @@
     },
     "autoload": {
         "psr-4": { "Colapiombo\\Behaviour\\Client\\" : "src/" },
-        "psr-4": { "Colapiombo\\Behaviour\\OpenAPI\\Client\\" : "gen/lib/" }
+        "psr-4": { "Colapiombo\\Behaviour\\OpenAPI\\Generated\\" : "gen/lib/" }
     }
 }

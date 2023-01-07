@@ -13,7 +13,7 @@ test:
 openapi-generator:
 	docker pull openapitools/openapi-generator-cli:latest
 	docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli:latest generate \
-		--additional-properties invokerPackage="Colapiombo\Behaviour\OpenAPI\Client" \
+		--additional-properties invokerPackage="Colapiombo\Behaviour\OpenAPI\Generated" \
 		--global-property models,modelTests=false \
 		--generator-name php \
 		--input-spec /local/petstore.yaml \
