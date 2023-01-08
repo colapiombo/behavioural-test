@@ -11,7 +11,7 @@
  */
 
 /**
- * OpenAPI Behaviour Test
+ * API
  *
  * Test behavior of classes or modules with PHPUnit https://.
  *

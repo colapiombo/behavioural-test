@@ -1,0 +1,57 @@
+openapi: 3.0.0
+info:
+    description: >-
+        
+        Test behavior of classes or modules with PHPUnit
+        https://.
+
+    version: 2.0.0
+    title: API
+paths:
+    '/product/{id}':
+        get:
+            summary: Find product by ID
+            description: Returns a single product
+            operationId: getProductById
+            parameters:
+                - name: id
+                  in: path
+                  description: ID of product to return
+                  required: true
+                  schema:
+                      type: integer
+                      format: int64
+            responses:
+                '200':
+                    description: successful operation
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Product'
+                '400':
+                    description: Invalid ID supplied
+                '404':
+                    description: Product not found
+components:
+    schemas:
+        Product:
+            title: a Product
+            description: A product for sale in the product store
+            type: object
+            required:
+                - name
+            properties:
+                id:
+                    type: integer
+                    format: int64
+                name:
+                    type: string
+                    example: test
+                status:
+                    type: string
+                    description: product status in the store
+                    deprecated: true
+                    enum:
+                        - available
+                        - pending
+                        - sold
